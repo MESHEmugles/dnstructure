@@ -1,5 +1,4 @@
 'use client'
-import Image from "next/image";
 import Top from "@/components/main/Top";
 import Mainbody from "@/components/main/Mainbody";
 import Bottom from "@/components/main/Bottom";
