@@ -1,33 +1,90 @@
+@import url(https://db.onlinewebfonts.com/c/97386c1d7bdb684478ab36ec4e1129c8?family=Sk-Modernist);
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Sk-Modernist";
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
+html,
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
+  background-color: #0000;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+.swiper {
+  width: 100% !important;
+  height: 100% !important;
+  overflow-x: hidden !important;
+}
+.carousel{
+  overflow-x: hidden !important;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  height: 100vh !important;
+  filter: brightness(60%) !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden !important;
+}
+
+.swiper-slide img {
+  display: block;
+  height: 100% !important;
+  width: 100% !important;
+  object-fit: cover;
+}
+.projectsearch{
+  enable-background: new 0 0 56.966 56.966;
+}
+/* .swiper-button-next, .swiper-button-prev{
+  color: #560200 !important;
+} */
+
+.swiper-pagination-bullet-active{
+  background-color: #560200 !important;
+}
+
+*::selection{
+  background-color: hsl(325, 66%, 30%);
+  color: #451606;
+}
+*::-webkit-scrollbar{
+  height: .5rem;
+  width: 0.6rem;
+}
+
+*::-webkit-scrollbar-track{
+  background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb{
+  background-color: #451606;
+}
+
+
+@media (max-width: 500px) {
+  .swiper-slide img {
+    display: block;
+    height: 80vh !important;
+    object-fit: center;
   }
+  .swiper-slide {
+    height: 80vh !important;
+  }
+  /* .swiper-button-next, .swiper-button-prev{
+    size: 10px !important;
+  } */
 }
