@@ -6,6 +6,7 @@ import 'swiper/css/effect-fade';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { EffectFade, Pagination, Autoplay } from 'swiper/modules';
+import styles from './Mainbody.module.css';
 
 const carousel = [
     {
@@ -38,7 +39,7 @@ const carousel = [
 
 export default function Mainbody() {
     return (
-        <>
+        <div className={styles.container}>
             <Swiper
                 spaceBetween={10}
                 slidesPerView={1}
@@ -54,7 +55,7 @@ export default function Mainbody() {
                     clickable: true,
                 }}
                 modules={[Autoplay, EffectFade, Pagination]}
-                className="mySwiper"
+                className="myswiper"
             >
                 {carousel.map((item) => (
                     <SwiperSlide key={item.id}>
@@ -62,6 +63,6 @@ export default function Mainbody() {
                     </SwiperSlide>
                 ))}
             </Swiper>
-        </>
+        </div>
       );
 }

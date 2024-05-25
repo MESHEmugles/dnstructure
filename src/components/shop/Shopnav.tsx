@@ -33,7 +33,7 @@ export default function Shopnav() {
     }, []);
     return (
         <div>
-            <nav className="bg-[#451606] border-gray-200">
+            <nav className="bg-white md:bg-[#451606] border-gray-200">
                 <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl text-[0.2em] p-4 md:text-base">
                     <div className="hidden md:block">
                         <div className="flex items-center space-x-3">
@@ -48,7 +48,7 @@ export default function Shopnav() {
                     </div>
                     <div className="block md:hidden">
                         <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-                            <Image src="/logo.png" className="h-10" alt="dnstruture logo" width={200} height={200} />
+                            <Image src="/logo.png" className="h-10" alt="dnstruture logo" width={100} height={100} />
                         </Link>
                     </div>
                     {/* <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse block md:hidden">
@@ -83,7 +83,7 @@ export default function Shopnav() {
                     </div>
                 </div>
             </nav>
-            <nav className="bg-gray-50 shadow-xl border-b">
+            <nav className="bg-gray-50 shadow-xl border-y">
                 <div className="max-w-screen-xl px-4 py-3 mx-auto flex flex-wrap items-center justify-between">
                     <div>
                         <div className="hidden md:block ml-5">

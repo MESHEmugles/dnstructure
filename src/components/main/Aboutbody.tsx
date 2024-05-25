@@ -9,10 +9,10 @@ export default function Aboutbody() {
 
                 <div className="relative max-w-5xl ml-0 lg:ml-3">
                     <span className="text-[#451606] my-3 flex items-center justify-start font-semibold text-xl md:text-2xl lg:text-4xl tracking-wider">
-                        About Desyns Structure
+                        About Dezyns Structure
                     </span>
                     <small className='text-[13px] md:text-[18px] leading-[10px] text-gray-400 text-start'>
-                        Welcome to <span className='text-[#451606] font-semibold text-base md:text-lg'>Desyns Structure</span> - We Listen and Execute
+                        Welcome to <span className='text-[#451606] font-semibold text-base md:text-lg'>Dezyns Structure</span> - We Listen and Execute
                     </small>
 
                     <section className="py-14 lg:py-24 relative mt-0 md:mt-6">
