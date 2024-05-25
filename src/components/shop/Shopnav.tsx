@@ -48,7 +48,7 @@ export default function Shopnav() {
                     </div>
                     <div className="block md:hidden">
                         <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-                            <Image src="/logo.png" className="h-10" alt="dnstruture logo" width={100} height={100} />
+                            <Image src="/logo.jpg" className="h-10" alt="dnstruture logo" width={100} height={100} />
                         </Link>
                     </div>
                     {/* <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse block md:hidden">
@@ -88,7 +88,7 @@ export default function Shopnav() {
                     <div>
                         <div className="hidden md:block ml-5">
                             <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-                                <Image src="/logo.png" className="h-10" alt="dnstruture logo" width={150} height={170} />
+                                <Image src="/logo.jpg" className="h-10" alt="dnstruture logo" width={150} height={170} />
                             </Link>
                         </div>
                     </div>

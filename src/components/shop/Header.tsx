@@ -14,7 +14,7 @@ function Header() {
                 <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
                     <div className="w-48">
                         <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-                            <Image src="/logo.png" className="h-10" alt="dnstruture logo" width={100} height={200} />
+                            <Image src="/logo.jpg" className="h-10" alt="dnstruture logo" width={100} height={200} />
                         </Link>
                     </div>
                     <form className="max-w-md mx-auto w-1/2 hidden md:block">
