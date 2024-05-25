@@ -1,7 +1,7 @@
 "use client"
 import React from 'react';
 import { SwiperSlide } from 'swiper/react';
-import Swipers from '../swiper/swipers';
+import Swipers from '../swiper/Swipers';
 import Image from 'next/image';
 import Link from 'next/link';
 // import { Swiper, SwiperSlide } from 'swiper/react';
