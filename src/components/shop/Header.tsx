@@ -13,7 +13,7 @@ function Header() {
             <nav className="bg-white border-gray-200 dark:bg-gray-900">
                 <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
                     <div className="w-48">
-                        <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
+                        <Link href="/shop" className="flex items-center space-x-3 rtl:space-x-reverse">
                             <Image src="/logo.jpg" className="h-10" alt="dnstruture logo" width={100} height={200} />
                         </Link>
                     </div>
@@ -59,20 +59,22 @@ function Header() {
                     </div> 
 
                     <div className="flex items-center space-x-6 rtl:space-x-reverse">
-                        <div className="relative">
-                            <div className="absolute text-[#451606] rounded-full font-bold -top-2 right-0 text-sm">
-                                0
+                        <Link href="/cart">
+                            <div className="relative">
+                                <div className="absolute text-[#451606] rounded-full font-bold -top-2 right-0 text-sm">
+                                    0
+                                </div>
+                                <svg className="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                    <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
+                                </svg>
                             </div>
-                            <svg className="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
-                            </svg>
-                        </div>
+                        </Link>
                         <div className="flex gap-2 font-semibold">
                             <div className="px-2">
-                                <a href="#" className="text-xs md:text-sm text-gray-600 dark:text-gray-500 hover:border-[#451606] hover:bg-[#451606] hover:text-white hover:px-2 hover:py-2 hover:rounded-lg">Register</a>     
+                                <a href="/auth/register" className="text-xs md:text-sm text-gray-600 dark:text-gray-500 hover:border-[#451606] hover:bg-[#451606] hover:text-white hover:px-2 hover:py-2 hover:rounded-lg">Register</a>     
                             </div>
                             <div>
-                                <a href="#" className="text-xs md:text-sm text-gray-600 dark:text-gray-500 hover:border-[#451606] hover:border hover:bg-transparent hover:text-[#451606] hover:px-2 hover:py-2 hover:rounded-lg">Login</a>
+                                <a href="/auth/login" className="text-xs md:text-sm text-gray-600 dark:text-gray-500 hover:border-[#451606] hover:border hover:bg-transparent hover:text-[#451606] hover:px-2 hover:py-2 hover:rounded-lg">Login</a>
                             </div>
                         </div>
                     </div>
@@ -83,19 +85,19 @@ function Header() {
                     <div className="flex items-center">
                         <ul className="text-xs md:text-base flex flex-row font-medium mt-0 space-x-8 rtl:space-x-reverse text-sm">
                             <li>
-                                <a href="/" className="text-[10.5px] md:text-base text-gray-900 dark:text-white md:hover:text-[#451606] hover:underline hover:decoration-[#451606]" aria-current="page">Home</a>
+                                <a href="/" className="text-[12px] md:text-base text-gray-900 font-bold md:font-medium dark:text-white md:hover:text-[#451606] hover:underline hover:decoration-[#451606]" aria-current="page">Home</a>
                             </li>
                             <li>
-                                <a href="/shop" className="text-[10.5px] md:text-base text-gray-900 dark:text-white md:hover:text-[#451606] hover:underline hover:decoration-[#451606]">Architectural Shop</a>
+                                <a href="/shop" className="text-[12px] md:text-base text-gray-900 font-bold md:font-medium dark:text-white md:hover:text-[#451606] hover:underline hover:decoration-[#451606]">Architectural Shop</a>
                             </li>
                             <li>
-                                <a href="/projects" className="text-[10.5px] md:text-base text-gray-900 dark:text-white md:hover:text-[#451606] hover:underline hover:decoration-[#451606]">Our project</a>
+                                <a href="/projects" className="text-[12px] md:text-base text-gray-900 font-bold md:font-medium dark:text-white md:hover:text-[#451606] hover:underline hover:decoration-[#451606]">Our project</a>
                             </li>
                             <li>
-                                <a href="/about"className="text-[10.5px] md:text-base text-gray-900 dark:text-white md:hover:text-[#451606] hover:underline hover:decoration-[#451606]">About Us</a>
+                                <a href="/about"className="text-[12px] md:text-base text-gray-900 font-bold md:font-medium dark:text-white md:hover:text-[#451606] hover:underline hover:decoration-[#451606]">About Us</a>
                             </li>
                             <li>
-                                <a href="/contact" className="text-[10.5px] md:text-base text-gray-900 dark:text-white md:hover:text-[#451606] hover:underline hover:decoration-[#451606]">Contact Us</a>
+                                <a href="/contact" className="text-[12px] md:text-base text-gray-900 font-bold md:font-medium dark:text-white md:hover:text-[#451606] hover:underline hover:decoration-[#451606]">Contact Us</a>
                             </li>
                         </ul>
                     </div>

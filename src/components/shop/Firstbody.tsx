@@ -1,14 +1,13 @@
 "use client"
 import React from 'react';
-import { SwiperSlide } from 'swiper/react';
 import Swipers from '../swiper/Swipers';
-import Image from 'next/image';
 import Link from 'next/link';
-// import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-fade';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import EmblaCarousel from '../utils/Emblacarousel';
+import { EmblaOptionsType } from 'embla-carousel'
 
 
 
@@ -17,26 +16,46 @@ const carousel = [
       id: 1,
       image: "/master.png",
       title: "Master",
+      name: "`A CONTEMPORARY SHOPPING MALL, WITH A MULTI PURPOSE HALL, RESTAURANT,LOUNGE/CLUB ON THE PENT FLOOR AND BASEMENT CAR PARK SITTING ON AN 2,450 SQ.M LAND`",
+      info: "Master",
+      smallprice: 19200,
+      largeprice: 950000,
     },
     {
       id: 2,
       image: "/living.png",
       title: "Living",
+      name: "`A CONTEMPORARY SHOPPING MALL, WITH A MULTI PURPOSE HALL, RESTAURANT,LOUNGE/CLUB ON THE PENT FLOOR AND BASEMENT CAR PARK SITTING ON AN 2,450 SQ.M LAND`",
+      info: "Master",
+      smallprice: 19200,
+      largeprice: 950000,
     },
     {
       id: 3,
       image: "/dining.png",
       title: "Dining",
+      name: "`A CONTEMPORARY SHOPPING MALL, WITH A MULTI PURPOSE HALL, RESTAURANT,LOUNGE/CLUB ON THE PENT FLOOR AND BASEMENT CAR PARK SITTING ON AN 2,450 SQ.M LAND`",
+      info: "Master",
+      smallprice: 19200,
+      largeprice: 950000,
     },
     {
       id: 4,
       image: "/exterior.png",
       title: "Exterior",
+      name: "`A CONTEMPORARY SHOPPING MALL, WITH A MULTI PURPOSE HALL, RESTAURANT,LOUNGE/CLUB ON THE PENT FLOOR AND BASEMENT CAR PARK SITTING ON AN 2,450 SQ.M LAND`",
+      info: "Master",
+      smallprice: 19200,
+      largeprice: 950000,
     },
     {
       id: 3,
       image: "/duplex.png",
       title: "Duplex",
+      name: "`A CONTEMPORARY SHOPPING MALL, WITH A MULTI PURPOSE HALL, RESTAURANT,LOUNGE/CLUB ON THE PENT FLOOR AND BASEMENT CAR PARK SITTING ON AN 2,450 SQ.M LAND`",
+      info: "Master",
+      smallprice: 19200,
+      largeprice: 950000,
     },
 ];
 const links = [
@@ -143,12 +162,16 @@ const land = [
       title: "3000sq.m land to 4000sq.m land",
     }, 
 ];
+
+const OPTIONS: EmblaOptionsType = { dragFree: true, loop: true }
+
+
 export default function Firstbody() {
   return (
-    <div className="flex flex-row items-cente justify-center">
-      <div className="basis-1/5">
-        <div className='flex flex-col items-center '>
-            <form className="max-w-md mx-auto w-full">
+    <div className="flex flex-col md:flex-row divide-x items-cente justify-center border-t border-gray-700 shadow-t">
+      <div className="basis-1/3 pr-9 pt-7">
+        <div className='flex flex-col items-center ml-4 w-full'>
+            <form className="max-w-xl mx-auto w-full pb-8 pt-3">
                 <div className="relative w-full">
                     <input type="search" id="search-dropdown" className="block rounded-l-lg p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-e-lg border-s-2 border border-[#451606] focus:ring-[#451606] focus:border-[#451606] dark:placeholder-gray-400 dark:text-black" placeholder="Search..." required />
                     <button type="submit" className="absolute top-0 end-0 p-2.5 text-sm font-medium h-full text-white hover:text-[#451606] hover:border-2 bg-[#451606] rounded-e-lg border border-[#451606]  hover:bg-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
@@ -159,74 +182,63 @@ export default function Firstbody() {
                     </button>
                 </div>
             </form>
+            <EmblaCarousel slides={carousel} options={OPTIONS} />
 
-            <div className='shop1 max-w-[30em] h-[20em] w-[18em] p-1 mt-3'>
-                <Swipers
-                    slides={carousel}
-                    inlineSwiper={{ width: '100%', height: '100%', overflowX: 'hidden' }}
-                    inlineSwiperSlideStyle={{
-                        backgroundPosition: 'center',
-                        backgroundSize: 'cover',
-                        height: '100vh',
-                        filter: 'brightness(60%)',
-                        display: 'flex',
-                        justifyContent: 'center',
-                        alignItems: 'center',
-                        overflowX: 'hidden',
-                    }}
-                    inlineImageStyle={{
-                        display: 'block',
-                        height: '100%',
-                        width: '100%',
-                        objectFit: 'cover',
-                        padding: '3em !important'
-                    }}
-                    width = {10}
-                    heigth = {10}
-                    classname = {'p-4'}
-                    spaceBetween={10}
-                    slidesPerView={1}
-                    centered = {false}
-                    effect={'fade'}
-                    autoplayDelay={1500}
-                    loop={true}
-                />
-            </div>
-
-            <div className="w-full text-sm">
-                <ul className="font-medium flex flex-col mt-4 gap-3.5 rounded-lg ml-2 md:bg-transparent">
+            <div className="w-full text-sm mt-5">
+                <ul className="font-medium flex flex-col gap-3.5 rounded-lg ml-2 md:bg-transparent">
                     {links.map((item) => (
-                        <li key={item.id} className='w-full md:w-auto rounded-full'>
-                            <Link href={item.link} className="leading-8">
-                                {item.title}
-                            </Link>
-                        </li>
+                      <li key={item.id} className='w-full md:w-auto rounded-full'>
+                          <Link href={item.link} className="leading-8">
+                              {item.title}
+                          </Link>
+                      </li>
 
                     ))}
                 </ul>
             </div>
         </div>
       </div>
-      <div className="bg-rose basis-3/4">
+      <div className="bg-rose basis-1/2">
         <div className='text-center'>
-            <h2 className='uppercase font-semibold text-3xl'>Coming soon</h2>
+          <h2 className='uppercase font-semibold text-[41px] pt-7'>Coming soon</h2>
 
-            <div className='shop1 max-w-[48em] h-[40em] w- p-1 mt-3'>
+            <div className='shop1 max-w-[58em] h-[40em] p-1'>
                 <Swipers
-                    slides={carousel}
-                    spaceBetween={10}
-                    slidesPerView={1}
-                    centered = {true}
-                    effect={'fade'}
-                    autoplayDelay={4500}
-                    loop={true}
+                  inlineSwiper={{ width: '100%', height: '100%', overflowX: 'hidden' }}
+                  inlineSwiperSlideStyle={{
+                      backgroundPosition: 'center',
+                      backgroundSize: 'contain',
+                      height: '100vh',
+                      filter: 'brightness(60%)',
+                      display: 'flex',
+                      justifyContent: 'center',
+                      alignItems: 'center',
+                      overflowX: 'hidden',
+                  }}
+                  inlineImageStyle={{
+                      display: 'block',
+                      height: '100%',
+                      width: '100%',
+                      objectFit: 'cover',
+                  }}
+                  width = {2000}
+                  heigth = {2000}
+                  classname = {'p-4'}
+                  classnamebody = {'hidden'}
+                  slides={carousel}
+                  spaceBetween={10}
+                  slidesPerView={1}
+                  centered = {true}
+                  effect={'fade'}
+                  autoplayDelay={4500}
+                  loop={true}
                 />
             </div>
         </div>
       </div>
-      <div className="bg-[#451606] basis-1/5">
-        <div className='flex flex-col items-center text-center '>
-            <form className="max-w-md mx-auto w-full">
+      <div className="bg-white basis-1/3 pl-2 pt-7">
+        <div className='flex flex-col items-center mr-4 text-center w-full'>
+            <form className="max-w-md mx-auto w-full pb-8 pt-4">
                 <div className="relative w-full">
                     <input type="search" id="search-dropdown" className="block rounded-l-lg p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-e-lg border-s-2 border border-[#451606] focus:ring-[#451606] focus:border-[#451606] dark:placeholder-gray-400 dark:text-black" placeholder="Search..." required />
                     <button type="submit" className="absolute top-0 end-0 p-2.5 text-sm font-medium h-full text-white hover:text-[#451606] hover:border-2 bg-[#451606] rounded-e-lg border border-[#451606]  hover:bg-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
@@ -238,7 +250,7 @@ export default function Firstbody() {
                 </div>
             </form>
 
-            <div className='shop1 max-w-[30em] h-[20em] w-[18em] p-1 mt-3'>
+            {/* <div className='shop1 max-w-[30em] h-[20em] w-[18em] p-1 mt-3'>
                 <Swipers
                     slides={carousel}
                     width = {10}
@@ -251,10 +263,11 @@ export default function Firstbody() {
                     autoplayDelay={4500}
                     loop={true}
                 />
-            </div>
+            </div> */}
+            <EmblaCarousel slides={carousel} options={OPTIONS} />
 
             <div className="w-full text-sm">
-                <ul className="font-medium flex flex-col mt-4 gap-10 rounded-lg ml-2 md:bg-transparent">
+                <ul className="font-medium flex flex-col mt-4 gap-4 rounded-lg ml-2 md:bg-transparent">
                     {land.map((item) => (
                         <li key={item.id} className='w-full md:w-auto rounded-full'>
                             <Link href={item.link} className="leading-8">

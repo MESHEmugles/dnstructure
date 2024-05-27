@@ -32,7 +32,7 @@ export default function Top() {
                                 <a href="/about" className="block py-2 px-3 text-[#451606] rounded hover:text-white md:hover:bg-[#451606] font-bold md:border-0 md:p-0">About</a>
                             </li>
                             <li>
-                                <a href="/" className="block py-2 px-3 text-[#451606] font-bold rounded hover:text-white md:hover:bg-[#451606] md:border-0 md:p-0">Architectural Shop</a>
+                                <a href="/shop" className="block py-2 px-3 text-[#451606] font-bold rounded hover:text-white md:hover:bg-[#451606] md:border-0 md:p-0">Architectural Shop</a>
                             </li>
                             <li>
                                 <a href="/projects" className="block py-2 px-3 text-[#451606] font-bold rounded hover:text-white md:hover:bg-[#451606] md:border-0 md:p-0">Our Project</a>

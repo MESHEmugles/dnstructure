@@ -5,7 +5,7 @@ import Bottom from "@/components/main/Bottom";
 
 export default function Home() {
   return (
-    <div>
+    <div className="bg-black">
       <Top/>
 
       <Mainbody/>
