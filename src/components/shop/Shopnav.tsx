@@ -98,7 +98,7 @@ export default function Shopnav() {
                                 <a href="/" className="md:text-gray-900 text-[#451606] md:hover:text-red hover:underline hover:decoration-[#451606] font-semibold">Home</a>
                             </li>
                             <li>
-                                <a href="/" className="md:text-gray-900 text-[#451606] md:hover:text-red hover:underline hover:decoration-[#451606] font-semibold">Architectural Shop</a>
+                                <a href="/shop" className="md:text-gray-900 text-[#451606] md:hover:text-red hover:underline hover:decoration-[#451606] font-semibold">Architectural Shop</a>
                             </li>
                             <li>
                                 <a href="/projects" className="md:text-gray-900 text-[#451606] md:hover:text-red hover:underline hover:decoration-[#451606] font-semibold">Our Projects</a>
