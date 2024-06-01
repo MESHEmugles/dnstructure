@@ -168,7 +168,6 @@ export default function Page({params}:any) {
                     </div>
                 </nav>
             </div>
-
             <Bottom/>
         </>
     )

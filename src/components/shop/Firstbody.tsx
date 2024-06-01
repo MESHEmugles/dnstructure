@@ -10,6 +10,7 @@ import EmblaCarousel from '../utils/Emblacarousel';
 import { EmblaOptionsType } from 'embla-carousel'
 import Image from 'next/image';
 import { initFlowbite } from 'flowbite';
+import { motion } from "framer-motion";
 
 
 
@@ -248,11 +249,16 @@ export default function Firstbody() {
             <div className="w-full text-sm mt-5 z-[99]">
                 <ul className="font-medium flex flex-col gap-3.5 rounded-lg ml-2 md:bg-transparent">
                   {links.map((item) => (
-                    <li key={item.id} className='w-full md:w-auto rounded-full xl:block hidden'>
+                    <motion.li 
+                      initial={{ opacity: 0, x: -70 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ ease: "easeOut", duration: 2 }} 
+                      key={item.id} 
+                      className='w-full md:w-auto rounded-full xl:block hidden'>
                         <Link href={item.link} className="leading-8 text-gray-500 hover:text-[#451606] hover:underline">
                             {item.title}
                         </Link>
-                    </li>
+                    </motion.li>
                   ))}
                   <div className="w-full xl:hidden md:block hidden">
                     <div className=''>
@@ -296,7 +302,11 @@ export default function Firstbody() {
         </div>
       </div>
       <div className="bg-rose basis-1/2">
-        <div className='text-center relative'>
+        <motion.div
+          initial={{ opacity: 0, y: -100 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ ease: "easeOut", duration: 1 }}
+          className='text-center relative'>
           <h2 className='uppercase font-semibold md:text-[20px] xl:text-[41px] pt-2 xl:pt-7 sm:block hidden'>Coming soon</h2>
 
           <div className='text-xl sm:hidden block relative top-[9em] text-[#451606] font-semibold'>
@@ -314,11 +324,11 @@ export default function Firstbody() {
               className="w-full max-h-[40em] h-[20em] mb-10"
             />
           </div>
-        </div>
+        </motion.div>
       </div>
       <div className="bg-white xl:basis-1/4 basis-1/3 px-3 md:pt-1 pt-6 xl:pt-7">
         <div className='flex flex-col xl:items-center mr-4 xl:text-center w-full'>
-            <form className="max-w-md mx-auto w-full pb-8 pt-4 md:block hidden">
+            <form className="max-w-md mx-auto w-full pb-8 pt-3 md:block hidden">
                 <div className="relative w-full">
                     <input type="search" id="search-dropdown" className="block rounded-l-lg p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-e-lg border-s-2 border border-[#451606] focus:ring-[#451606] focus:border-[#451606] dark:placeholder-gray-400 dark:text-black" placeholder="Search for lands..." required />
                     <button type="submit" className="absolute top-0 end-0 p-2.5 text-sm font-medium h-full text-white hover:text-[#451606] hover:border-2 bg-[#451606] rounded-e-lg border border-[#451606]  hover:bg-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
@@ -336,11 +346,16 @@ export default function Firstbody() {
             <div className="w-full text-sm z-[99]">
                 <ul className="font-medium flex flex-col mt-4 gap-4 rounded-lg ml-2 md:bg-transparent">
                     {land.map((item) => (
-                        <li key={item.id} className='w-full md:w-auto rounded-full xl:block hidden'>
+                        <motion.li
+                        initial={{ opacity: 0, x: -70 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ ease: "easeOut", duration: 2 }} 
+                          key={item.id} 
+                          className='w-full md:w-auto rounded-full xl:block hidden'>
                             <Link href={item.link} className="leading-8 hover:text-[#451606] hover:underline">
                                 {item.title}
                             </Link>
-                        </li>
+                        </motion.li>
                     ))}
 
                   <div className="w-full xl:hidden md:block hidden">

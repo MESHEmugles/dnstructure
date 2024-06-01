@@ -1,4 +1,3 @@
-"use client"
 import React from 'react'
 import Aboutanime from '@/components/utils/Animate'
 import Shopnav from '@/components/shop/Shopnav'

@@ -1,4 +1,5 @@
 import Header from "@/components/shop/Header";
+import Aboutanime from "@/components/utils/Animate";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -14,8 +15,10 @@ export default function Layout({children,}: ShopProps) {
   return (
     <html lang="en">
       <body>
-        <Header/>
-        {children}
+        <Aboutanime delay={0.5}>
+          <Header/>
+          {children}
+        </Aboutanime>
       </body>
     </html>
   );
