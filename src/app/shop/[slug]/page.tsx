@@ -29,10 +29,9 @@ const getData = (cat: CategoryKey): Slide[] => {
     return [];
 }
 
-export default function page({params}:any) {
+export default function Page({params}:any) {
     const dat = getData(params.slug)
     const [imageIndexes, setImageIndexes] = useState<number[]>(new Array(dat.length).fill(0));
-    const [modalContent, setModalContent] = useState<Slide | null>(null);
 
     useEffect(() => {
         setImageIndexes(new Array(dat.length).fill(0));
