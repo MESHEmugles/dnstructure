@@ -35,11 +35,11 @@
 @media (max-width: 500px) {
     .swiper-slide img {
       display: block;
-      height: 80vh !important;
+      height: 100vh !important;
       object-fit: center;
     }
     .swiper-slide {
-      height: 80vh !important;
+      height: 100vh !important;
     }
     /* .swiper-button-next, .swiper-button-prev{
       size: 10px !important;

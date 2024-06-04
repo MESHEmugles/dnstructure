@@ -34,10 +34,6 @@ export default function Bottom() {
                     <p className=''>
                         © Dezyns Structure Ltd. All Rights Reserved.
                     </p>
-                    <span className='flex text-gray-500 mx-auto gap-1 md:mx-1'>
-                        Site by: {" "}
-                        <a href="">  Trachel dev</a>
-                    </span>
                 </div>
 
                 <div className="w-1/2 md:w-auto text-xl mx-auto md:mx-0">

@@ -142,32 +142,32 @@ export default function Maincontent() {
           />
           <div className="w-full relative max-w-[55em] -mt-[8em] lg:-mt-[15em] z-[99] bg-black/50 font-semibold text-white py-4 lg:py-10 mx-auto rounded-lg">
             <div className='mx-10'>
-                <p className='font-sans max-w-[50em] pb-2 text-xs md:text-base '>
+                <p className='font-sans max-w-[50em] pb-2 text-xs md:text-base tracking-[1.4px] md:tracking-0'>
                     {slide.name}
                 </p>
                 <div className='flex md:flex-row flex-col item-center justify-between text-white'>
-                  <button onClick={() => setVisible(true)} data-modal-target="large-modal" data-modal-toggle="large-modal" className="block text-white border-0 uppercase" type="button">
+                  <button onClick={() => setVisible(true)} data-modal-target="large-modal" data-modal-toggle="large-modal" className="tracking-[1.2px] md:tracking-0 block text-white border-0 uppercase" type="button">
                       Drawing Info
                   </button>
                   <div className='flex flex-col'>
                     <div className='flex gap-3'>
-                        <Link  href="/pricing" className='underline'>
+                        <Link  href="/pricing" className='tracking-[1.4px] md:tracking-0 underline'>
                             <small>
                                 View Floor Plans and Summarized BOQ: 
                             </small>
                         </Link>
-                        <span>
+                        <span className='text-[13px] w-1/3 md:text-base'>
                             ₦ {slide.smallprice}
                         </span>
                     </div>
 
                     <div className="flex gap-3">
-                        <Link  href="/pricing" className='underline'>
+                        <Link  href="/pricing" className='tracking-[1px] md:tracking-0 underline'>
                             <small>
                                 BUY THE FULL WORKING DRAWINGS:
                             </small>
                         </Link>
-                        <span>
+                        <span className='text-[13px] w-1/3 md:text-base'>
                             ₦ {slide.largeprice}
                         </span>
                     </div>
