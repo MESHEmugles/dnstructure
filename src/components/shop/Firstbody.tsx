@@ -15,160 +15,160 @@ import { motion } from "framer-motion";
 
 
 const carousel = [
-    {
-      id: 1,
-      image: "/master.png",
-      title: "Master",
-      name: "`A CONTEMPORARY SHOPPING MALL, WITH A MULTI PURPOSE HALL, RESTAURANT,LOUNGE/CLUB ON THE PENT FLOOR AND BASEMENT CAR PARK SITTING ON AN 2,450 SQ.M LAND`",
-      info: "Master",
-      smallprice: 19200,
-      largeprice: 950000,
-    },
-    {
-      id: 2,
-      image: "/living.png",
-      title: "Living",
-      name: "`A CONTEMPORARY SHOPPING MALL, WITH A MULTI PURPOSE HALL, RESTAURANT,LOUNGE/CLUB ON THE PENT FLOOR AND BASEMENT CAR PARK SITTING ON AN 2,450 SQ.M LAND`",
-      info: "Master",
-      smallprice: 19200,
-      largeprice: 950000,
-    },
-    {
-      id: 3,
-      image: "/dining.png",
-      title: "Dining",
-      name: "`A CONTEMPORARY SHOPPING MALL, WITH A MULTI PURPOSE HALL, RESTAURANT,LOUNGE/CLUB ON THE PENT FLOOR AND BASEMENT CAR PARK SITTING ON AN 2,450 SQ.M LAND`",
-      info: "Master",
-      smallprice: 19200,
-      largeprice: 950000,
-    },
-    {
-      id: 4,
-      image: "/exterior.png",
-      title: "Exterior",
-      name: "`A CONTEMPORARY SHOPPING MALL, WITH A MULTI PURPOSE HALL, RESTAURANT,LOUNGE/CLUB ON THE PENT FLOOR AND BASEMENT CAR PARK SITTING ON AN 2,450 SQ.M LAND`",
-      info: "Master",
-      smallprice: 19200,
-      largeprice: 950000,
-    },
-    {
-      id: 3,
-      image: "/duplex.png",
-      title: "Duplex",
-      name: "`A CONTEMPORARY SHOPPING MALL, WITH A MULTI PURPOSE HALL, RESTAURANT,LOUNGE/CLUB ON THE PENT FLOOR AND BASEMENT CAR PARK SITTING ON AN 2,450 SQ.M LAND`",
-      info: "Master",
-      smallprice: 19200,
-      largeprice: 950000,
-    },
+  {
+    id: 1,
+    image: "/master.png",
+    title: "Master",
+    name: "`A CONTEMPORARY SHOPPING MALL, WITH A MULTI PURPOSE HALL, RESTAURANT,LOUNGE/CLUB ON THE PENT FLOOR AND BASEMENT CAR PARK SITTING ON AN 2,450 SQ.M LAND`",
+    info: "Master",
+    smallprice: 19200,
+    largeprice: 950000,
+  },
+  {
+    id: 2,
+    image: "/living.png",
+    title: "Living",
+    name: "`A CONTEMPORARY SHOPPING MALL, WITH A MULTI PURPOSE HALL, RESTAURANT,LOUNGE/CLUB ON THE PENT FLOOR AND BASEMENT CAR PARK SITTING ON AN 2,450 SQ.M LAND`",
+    info: "Master",
+    smallprice: 19200,
+    largeprice: 950000,
+  },
+  {
+    id: 3,
+    image: "/dining.png",
+    title: "Dining",
+    name: "`A CONTEMPORARY SHOPPING MALL, WITH A MULTI PURPOSE HALL, RESTAURANT,LOUNGE/CLUB ON THE PENT FLOOR AND BASEMENT CAR PARK SITTING ON AN 2,450 SQ.M LAND`",
+    info: "Master",
+    smallprice: 19200,
+    largeprice: 950000,
+  },
+  {
+    id: 4,
+    image: "/exterior.png",
+    title: "Exterior",
+    name: "`A CONTEMPORARY SHOPPING MALL, WITH A MULTI PURPOSE HALL, RESTAURANT,LOUNGE/CLUB ON THE PENT FLOOR AND BASEMENT CAR PARK SITTING ON AN 2,450 SQ.M LAND`",
+    info: "Master",
+    smallprice: 19200,
+    largeprice: 950000,
+  },
+  {
+    id: 3,
+    image: "/duplex.png",
+    title: "Duplex",
+    name: "`A CONTEMPORARY SHOPPING MALL, WITH A MULTI PURPOSE HALL, RESTAURANT,LOUNGE/CLUB ON THE PENT FLOOR AND BASEMENT CAR PARK SITTING ON AN 2,450 SQ.M LAND`",
+    info: "Master",
+    smallprice: 19200,
+    largeprice: 950000,
+  },
 ];
 const links = [
-    {
-      id: 1,
-      link: "/shop",
-      title: "Shop for architectural design plans",
-    },
-    {
-      id: 2,
-      link: "/shop/duplex",
-      title: "Duplex",
-    },
-    {
-      id: 3,
-      link: "/shop/bungalow",
-      title: "Bungalow",
-    },
-    {
-      id: 4,
-      link: "/shop/flats",
-      title: "Flats",
-    },
-    {
-      id: 5,
-      link: "/shop/townhouse",
-      title: "Townhouse Terrace",
-    },
-    {
-      id: 6,
-      link: "/shop/plaza",
-      title: "Plaza, mall, supermarket and office space",
-    },
-    {
-      id: 7,
-      link: "/shop/hotel",
-      title: "Hotel",
-    },
-    {
-      id: 8,
-      link: "/shop/eventcenter",
-      title: "Event Center",
-    },
-    {
-      id: 9,
-      link: "/shop/healthcare",
-      title: "Healthcare Buildings",
-    },
-    {
-      id: 10,
-      link: "/shop/lounge",
-      title: "Lounge bar and clubs",
-    },
-    {
-      id: 11,
-      link: "/shop/church",
-      title: "Church",
-    },
-    {
-      id: 12,
-      link: "/shop/schools",
-      title: "Schools",
-    },
+  {
+    id: 1,
+    link: "/shop",
+    title: "Shop for architectural design plans",
+  },
+  {
+    id: 2,
+    link: "/shop/duplex",
+    title: "Duplex",
+  },
+  {
+    id: 3,
+    link: "/shop/bungalow",
+    title: "Bungalow",
+  },
+  {
+    id: 4,
+    link: "/shop/flats",
+    title: "Flats",
+  },
+  {
+    id: 5,
+    link: "/shop/townhouse",
+    title: "Townhouse Terrace",
+  },
+  {
+    id: 6,
+    link: "/shop/plaza",
+    title: "Plaza, mall, supermarket and office space",
+  },
+  {
+    id: 7,
+    link: "/shop/hotel",
+    title: "Hotel",
+  },
+  {
+    id: 8,
+    link: "/shop/eventcenter",
+    title: "Event Center",
+  },
+  {
+    id: 9,
+    link: "/shop/healthcare",
+    title: "Healthcare Buildings",
+  },
+  {
+    id: 10,
+    link: "/shop/lounge",
+    title: "Lounge bar and clubs",
+  },
+  {
+    id: 11,
+    link: "/shop/church",
+    title: "Church",
+  },
+  {
+    id: 12,
+    link: "/shop/schools",
+    title: "Schools",
+  },
 ];
 const land = [
-    {
-      id: 1,
-      link: "/shop/sq",
-      title: "200sq.m land to 300sq.m land",
-    },
-    {
-      id: 2,
-      link: "/shop/sq2",
-      title: "300sq.m land to 400sq.m land",
-    },
-    {
-      id: 3,
-      link: "/shop/sq3",
-      title: "400sq.m land to 500sq.m land",
-    },
-    {
-      id: 4,
-      link: "/shop/sq4",
-      title: "600sq.m land to 700sq.m land",
-    },
-    {
-      id: 5,
-      link: "/shop/sq5",
-      title: "800sq.m land to 900sq.m land",
-    },
-    {
-      id: 6,
-      link: "/shop/sq6",
-      title: "1000sq.m land to 2000sq.m land",
-    },
-    {
-      id: 7,
-      link: "/shop/sq7",
-      title: "2000sq.m land to 3000sq.m land",
-    },
-    {
-      id: 8,
-      link: "/shop/sq8",
-      title: "3000sq.m land to 4000sq.m land",
-    }, 
+  {
+    id: 1,
+    link: "/shop/sq",
+    title: "200sq.m land to 300sq.m land",
+  },
+  {
+    id: 2,
+    link: "/shop/sq2",
+    title: "300sq.m land to 400sq.m land",
+  },
+  {
+    id: 3,
+    link: "/shop/sq3",
+    title: "400sq.m land to 500sq.m land",
+  },
+  {
+    id: 4,
+    link: "/shop/sq4",
+    title: "600sq.m land to 700sq.m land",
+  },
+  {
+    id: 5,
+    link: "/shop/sq5",
+    title: "800sq.m land to 900sq.m land",
+  },
+  {
+    id: 6,
+    link: "/shop/sq6",
+    title: "1000sq.m land to 2000sq.m land",
+  },
+  {
+    id: 7,
+    link: "/shop/sq7",
+    title: "2000sq.m land to 3000sq.m land",
+  },
+  {
+    id: 8,
+    link: "/shop/sq8",
+    title: "3000sq.m land to 4000sq.m land",
+  }, 
 ];
 
 const OPTIONS: EmblaOptionsType = { dragFree: true, loop: true }
 const images = [
-  '/master.png', "/living.png", "/exterior.png", "/duplex.png",  "/dining.png",
+  '/VIEW 1B.jpg', "/VIEW 2B.jpg", "/VIEW 3B.jpg", "/VIEW 4B.jpg",  "/VIEW 5B.jpg",
 ]
 
 export default function Firstbody() {
