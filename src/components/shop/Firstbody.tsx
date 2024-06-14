@@ -61,6 +61,53 @@ const carousel = [
     largeprice: 950000,
   },
 ];
+const carousels = [
+  {
+    id: 1,
+    image: "/living.png",
+    title: "Living",
+    name: "`A CONTEMPORARY SHOPPING MALL, WITH A MULTI PURPOSE HALL, RESTAURANT,LOUNGE/CLUB ON THE PENT FLOOR AND BASEMENT CAR PARK SITTING ON AN 2,450 SQ.M LAND`",
+    info: "Master",
+    smallprice: 19200,
+    largeprice: 950000,
+  },
+  {
+    id: 2,
+    image: "/duplex.png",
+    title: "Duplex",
+    name: "`A CONTEMPORARY SHOPPING MALL, WITH A MULTI PURPOSE HALL, RESTAURANT,LOUNGE/CLUB ON THE PENT FLOOR AND BASEMENT CAR PARK SITTING ON AN 2,450 SQ.M LAND`",
+    info: "Master",
+    smallprice: 19200,
+    largeprice: 950000,
+  },
+  {
+    id: 3,
+    image: "/master.png",
+    title: "Master",
+    name: "`A CONTEMPORARY SHOPPING MALL, WITH A MULTI PURPOSE HALL, RESTAURANT,LOUNGE/CLUB ON THE PENT FLOOR AND BASEMENT CAR PARK SITTING ON AN 2,450 SQ.M LAND`",
+    info: "Master",
+    smallprice: 19200,
+    largeprice: 950000,
+  },
+  {
+    id: 4,
+    image: "/exterior.png",
+    title: "Exterior",
+    name: "`A CONTEMPORARY SHOPPING MALL, WITH A MULTI PURPOSE HALL, RESTAURANT,LOUNGE/CLUB ON THE PENT FLOOR AND BASEMENT CAR PARK SITTING ON AN 2,450 SQ.M LAND`",
+    info: "Master",
+    smallprice: 19200,
+    largeprice: 950000,
+  },
+  {
+    id: 5,
+    image: "/dining.png",
+    title: "Dining",
+    name: "`A CONTEMPORARY SHOPPING MALL, WITH A MULTI PURPOSE HALL, RESTAURANT,LOUNGE/CLUB ON THE PENT FLOOR AND BASEMENT CAR PARK SITTING ON AN 2,450 SQ.M LAND`",
+    info: "Master",
+    smallprice: 19200,
+    largeprice: 950000,
+  },
+];
 const links = [
   {
     id: 1,
@@ -340,7 +387,7 @@ export default function Firstbody() {
                 </div>
             </form>
             <div className="md:block hidden">
-              <EmblaCarousel slides={carousel} options={OPTIONS} />
+              <EmblaCarousel slides={carousels} options={OPTIONS} />
             </div>
 
             <div className="w-full text-sm z-[99]">
