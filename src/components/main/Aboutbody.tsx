@@ -9,10 +9,10 @@ export default function Aboutbody() {
 
                 <div className="relative max-w-5xl ml-0 lg:ml-3">
                     <span className="text-[#451606] my-3 flex items-center justify-start font-semibold text-xl md:text-2xl lg:text-4xl tracking-wider">
-                        About Dezyns Structure
+                        About Dezyns <span className="text-[13px] md:text-[17px] -mb-2 md:-mb-4 px-2"> & </span> Structure
                     </span>
                     <small className='text-[13px] md:text-[18px] leading-[10px] text-gray-400 text-start'>
-                        Welcome to <span className='text-[#451606] font-semibold text-base md:text-lg'>Dezyns Structure</span> - We Listen and Execute
+                        Welcome to <span className='text-[#451606] font-semibold text-base md:text-lg'>Dezyns <span className="text-[13px]">&</span> Structure</span> - We Listen and Execute
                     </small>
 
                     <section className="py-14 lg:py-24 relative mt-0 md:mt-6">
@@ -37,7 +37,7 @@ export default function Aboutbody() {
                                             of experts in a way that there is always the top expert you can get in every building department.
                                         </p>
                                         <p className="font-normal md:block hidden lg:hidden text-base leading-8 text-gray-500 max-lg:text-center w-full lg:w-[30em] text-wrap mx-auto">
-                                            Dezyns and Structures Ltd is a Lagos-based company founded in 2010 that provides a wide range of 
+                                            Dezyns <span className="text-[13px]">&</span> Structures Ltd is a Lagos-based company founded in 2010 that provides a wide range of 
                                             design and construction services, from architecture and interior design to construction and 
                                             consultancy. Their commitment to delivering high-quality projects and their team of experts in 
                                             every department allows them to handle diverse projects and ensure client satisfaction
@@ -68,7 +68,7 @@ export default function Aboutbody() {
                             <p className=" my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400">
                                 Dezyns and structures understanding of architecture resides in the creation of the 
                                 fine art and methodic science of designing buildings and spaces that will have a profound 
-                                improvement on people’s lifestyles and businesses. Our architecture is uniquely matched to each 
+                                improvement on people&nbsp;s lifestyles and businesses. Our architecture is uniquely matched to each 
                                 project but always seeks to combine beauty and meaning by placing people at the center of the design
                             </p>
                         </div>

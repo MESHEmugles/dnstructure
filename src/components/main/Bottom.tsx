@@ -32,7 +32,7 @@ export default function Bottom() {
             <div className='flex flex-col md:flex-row md:items-center text-center md:text-start text-white md:justify-between mx-auto md:mx-12'>
                 <div className='flex flex-col md:basis-1/2 text-[15px] w-screen md:w-auto'>
                     <p className=''>
-                        © Dezyns Structure Ltd. All Rights Reserved.
+                        © Dezyns <span className="text-[13px]">&</span> Structure Ltd. All Rights Reserved.
                     </p>
                 </div>
 
