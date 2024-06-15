@@ -19,8 +19,8 @@ export default function Aboutbody() {
                         <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-0 lg:px-8 relative ">
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-9">
                                 <div className="img-box md:pt-16">
-                                    <Image src="/master.png" width={2000} height={2000} alt="About Us tailwind page"
-                                        className="max-lg:mx-auto h-[70vh]"/>
+                                    <Image src="/about1.jpg" width={2000} height={2000} alt="About Us tailwind page"
+                                        className="max-lg:mx-auto h-[28vh] md:h-auto lg:h-[50vh] rounded-lg"/>
                                 </div>
                                 <div className="lg:pl-[30px] flex items-center justify-center">
                                     <div className="data w-full">
