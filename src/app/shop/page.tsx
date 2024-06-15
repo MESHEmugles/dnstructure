@@ -1,8 +1,9 @@
-import Banner from "@/components/shop/Banner"
-import Firstbody from "@/components/shop/Firstbody"
-import Maincontent from "@/components/shop/Maincontent"
-import Bottom from "@/components/main/Bottom"
-import Cards from "@/components/shop/Cards"
+import dynamic from 'next/dynamic'
+const Banner = dynamic(() => import('@/components/shop/Banner'))
+const Firstbody = dynamic(() => import('@/components/shop/Firstbody'))
+const Maincontent = dynamic(() => import('@/components/shop/Maincontent'))
+const Bottom = dynamic(() => import('@/components/shop/Cards'))
+const Cards = dynamic(() => import('@/components/main/Bottom'))
 
 function Shop() {
     return(

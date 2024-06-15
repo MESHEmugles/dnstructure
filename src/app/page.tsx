@@ -1,7 +1,9 @@
 'use client'
-import Top from "@/components/main/Top";
-import Mainbody from "@/components/main/Mainbody";
-import Bottom from "@/components/main/Bottom";
+import dynamic from 'next/dynamic'
+const Top = dynamic(() => import('../components/main/Top'))
+const Mainbody = dynamic(() => import('../components/main/Mainbody'))
+const Bottom = dynamic(() => import('../components/main/Bottom'))
+
 
 export default function Home() {
   return (
