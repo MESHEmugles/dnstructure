@@ -12,7 +12,7 @@ export default function Top() {
             <nav className="border-gray-200 bg-transparent fixed w-screen top-4 md:top-12 z-[90]">
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                     <Link href="/" className="flex items-center ml-10 space-x-3 rtl:space-x-reverse hidden md:block">
-                        <Image src="/logo.jpg" className="h-10" alt="dnstruture logo" width={200} height={300} />
+                        <Image src="/logo.jpg" className="h-10" alt="dnstruture logo" width={90} height={50} />
                     </Link>
                     <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse block md:hidden">
                         <Image src="/logo.jpg" className="h-10" alt="dnstruture logo" width={140} height={140} />

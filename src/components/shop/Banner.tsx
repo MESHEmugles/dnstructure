@@ -19,7 +19,7 @@ function Banner () {
 
           <div className="py-5">
             <p className="my-4 md:text-base lg:text-xl/relaxed text-center">
-              <span className="text-[#451606] font-semibold">Welcome to Dezyns Structure.</span> Discover a 
+              <span className="text-[#451606] font-semibold">Welcome to Dezyns <span className="text-[13px]">&</span> Structures.</span> Discover a 
               wide range of building plans, from duplexes to hotels. 
               Our professional designs are ready for immediate use, 
               making your dream home a reality. Start your project 
