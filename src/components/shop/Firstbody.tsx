@@ -1,6 +1,5 @@
 "use client"
 import React, { useEffect, useState } from 'react';
-import Swipers from '../swiper/Swipers';
 import Link from 'next/link';
 import 'swiper/css';
 import 'swiper/css/effect-fade';
@@ -9,7 +8,6 @@ import 'swiper/css/pagination';
 import EmblaCarousel from '../utils/Emblacarousel';
 import { EmblaOptionsType } from 'embla-carousel'
 import Image from 'next/image';
-import { initFlowbite } from 'flowbite';
 import { motion } from "framer-motion";
 
 
@@ -230,9 +228,6 @@ export default function Firstbody() {
 
     return () => clearInterval(intervalId);
   }, [images.length]);
-  useEffect(() => {
-    initFlowbite();
-  }, []);
   const [visible, setVisible] = useState(false)
   const [lands, setLands] = useState(false)
 

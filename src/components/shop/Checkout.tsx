@@ -1,11 +1,4 @@
-"use client"
-import React, { useEffect } from "react";
-import { initFlowbite } from 'flowbite'
-
 export default function Checkout() {
-    useEffect(() => {
-        initFlowbite();
-    }, []);
     return (
         <section className="bg-white py-8 antialiased md:pb-16 md:pt-10">
             <form action="#" className="mx-auto max-w-screen-xl px-4 2xl:px-0">

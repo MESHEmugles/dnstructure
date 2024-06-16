@@ -1,7 +1,4 @@
-"use client"
-import React, { useEffect } from 'react'
 import Image from 'next/image'
-import { initFlowbite } from 'flowbite';
 
 
 
@@ -110,9 +107,6 @@ const projects = [
 
 
 export default function Projectbody() {
-    useEffect(() => {
-        initFlowbite();
-    }, []);
     return (
         <div>
             <div>
