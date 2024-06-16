@@ -227,7 +227,7 @@ export default function Firstbody() {
     const intervalId = setInterval(nextSlideAuto, 3000);
 
     return () => clearInterval(intervalId);
-  }, [images.length]);
+  });
   const [visible, setVisible] = useState(false)
   const [lands, setLands] = useState(false)
 

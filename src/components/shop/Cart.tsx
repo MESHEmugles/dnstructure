@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 export default function Cart() {
     return (
@@ -12,8 +13,8 @@ export default function Cart() {
                             <div className="rounded-lg border border-[#451606]/40 bg-white p-4 shadow-sm dark:border-gray-700 dark:bg-gray-800 md:p-6">
                                 <div className="space-y-4 md:flex md:items-center md:justify-between md:gap-6 md:space-y-0">
                                     <a href="#" className="shrink-0 md:order-1">
-                                        <img className="h-20 w-20 dark:hidden rounded" src="/duplex.png" alt="imac image" />
-                                        <img className="hidden h-20 w-20 dark:block rounded" src="/duplex.png" alt="imac image" />
+                                        <Image width={100} height={20} className="h-20 w-20 dark:hidden rounded" src="/duplex.png" alt="imac image" />
+                                        <Image width={100} height={20} className="hidden h-20 w-20 dark:block rounded" src="/duplex.png" alt="imac image" />
                                     </a>
 
                                     <label htmlFor="counter-input" className="sr-only text-[#451606]">Choose quantity:</label>
