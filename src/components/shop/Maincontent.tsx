@@ -163,13 +163,13 @@ export default function Maincontent() {
   };
   return (
     <div className=''>
-      <div className='text-center pb-4'>
+      <div className='text-center pb-10'>
         <hr className="w-20 h-2 mx-auto bg-[#451606] border-0 rounded my-3 dark:bg-gray-700"/>
         <h2 className='text-2xl font-bold uppercase tracking-1'>
           Building Showcases
         </h2>
-        <small>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        <small className ="tracking-10 text-sm md:text-base md:w-1/2 w-auto">
+          Welcome to Dezyns & Structures where you can find all kinds of building plans, we have what you need.
         </small>
       </div>
 

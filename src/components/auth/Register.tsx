@@ -54,15 +54,8 @@ export default function Register() {
                                     Register
                                 </span>
                             </button>
-                            <p className="mt-6 text-xs text-gray-600 text-center">
-                                I agree to the
-                                <a href="#" className="border-b border-gray-500 border-dotted">
-                                    Terms of Service
-                                </a>
-                                and
-                                <a href="#" className="border-b border-gray-500 border-dotted">
-                                    Privacy Policy
-                                </a>
+                            <p className="mt-6 text-xs text-gray-600 text-center tracking-10">
+                                I agree to Dezyns & Structures <a href="#" className="underline"> Terms of Service {" "}</a> and <a href="#" className="underline">Privacy Policy</a>
                             </p>
                         </div>
                     </div>
